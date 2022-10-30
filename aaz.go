@@ -19,6 +19,6 @@ func InsertBanner(tz *entities.BannerEntity) (int64, bool, error, string) {
         }
         return id, true, err, ""
     }else{
-        return 0, false, nil, "Data Already Exist."
+        return 0, false, nil, "Data Already Exist.Change It."
     }
 }
