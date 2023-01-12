@@ -13,11 +13,7 @@ func InsertBanner(tz *entities.BannerEntity) (int64, bool, error, string) {
         return 0, false, err, "Something Went Wrong"
     }
     if count.Total == 0 {
-        id, err := dataAccess.InsertBanner(tz)
-        if err != nil {
-            return 0, false, err, "Something Went Wronggggggggggggggggggggg"
-        }
-        return id, true, err, ""
+        id, err := dataAccess.InsertBanner(tz
     }else{
         return 0, false, nil, "Data Already Exist.Change It."
     }
